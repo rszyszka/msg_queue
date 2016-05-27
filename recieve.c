@@ -51,7 +51,7 @@ int main()
 			exit(1);	
 		}
 		if (isalpha(elem.mvalue[0]))
-			printf("poprawny\n");
+			printf("%s\n",elem.mvalue);
 		else
 			printf("niepoprawny\n");
 
