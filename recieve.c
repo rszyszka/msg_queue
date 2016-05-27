@@ -50,13 +50,17 @@ int main()
 			perror("msgrcv() failure");
 			exit(1);	
 		}
+		if (isalpha(elem.mvalue[0]))
+			printf("poprawny\n");
+		else
+			printf("niepoprawny\n");
 
 		if (msgctl(msgid, IPC_RMID, NULL) == -1)
 		{
 			perror("msgctl() failure");
 			exit(1);
 		}
-		printf("Wiadomość: %s\n\n",elem.mvalue);
+		
 		}else
 			printf("Nie ma weekendu!\n");
 	
