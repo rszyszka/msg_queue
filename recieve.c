@@ -4,6 +4,7 @@
 #include <sys/ipc.h>
 #include <sys/msg.h>
 #include <string.h>
+#include <unistd.h>
 
 struct buf_elem {
 	long mtype;
